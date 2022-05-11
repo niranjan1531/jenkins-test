@@ -1,7 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
         stage('Task 1') {
           steps {
             sh 'python3 task1/run.py'
@@ -12,7 +11,5 @@ pipeline {
             sh 'python3 task2/run.py'
           }
         }
-    }
-
   }
 }
