@@ -5,9 +5,9 @@ pipeline {
       parallel {
         stage('Task 1') {
           steps {
-            sh 'ls'
+            sh 'ls ~'
             sh 'python3 task1/run.py'
-            sh 'docker ps -a'
+            #sh 'docker ps -a'
           }
         }
         stage('Task 2') {
