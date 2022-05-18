@@ -7,7 +7,6 @@ pipeline {
           steps {
             sh 'ls ~'
             sh 'python3 task1/run.py'
-            #sh 'docker ps -a'
           }
         }
         stage('Task 2') {
