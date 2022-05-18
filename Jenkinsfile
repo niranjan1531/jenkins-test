@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Task 1') {
           steps {
-            sh 'docker ps -a'
+            
             sh 'python3 task1/run.py'
           }
         }
