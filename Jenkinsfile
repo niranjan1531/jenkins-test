@@ -5,6 +5,8 @@ pipeline {
       parallel {
         stage('Task 1') {
           steps {
+            sh 'pwd'
+            sh 'whoami'
             sh 'sudo docker ps'
             sh 'python3 task1/run.py'
           }
