@@ -7,6 +7,8 @@ pipeline {
           steps {
             sh 'pwd'
             sh 'whoami'
+            sh 'python3 --version'
+            sh 'brew list'
             sh 'sudo docker ps'
             sh 'python3 task1/run.py'
           }
