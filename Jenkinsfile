@@ -8,14 +8,22 @@ pipeline {
           steps {
             sh 'pwd'
             echo 'TASK 1'
-            sh 'python3 task1/run.py'
+            dir('task1'){
+              sh 'pwd'
+              sh 'ls'
+              sh 'python3 task1/run.py'
+            }
           }
         }
         stage('Task 2') {
           steps {
             sh 'ls'
             echo 'TASK 2'
-            sh 'python3 task1/run.py'
+            dir('task1'){
+              sh 'pwd'
+              sh 'ls'
+              sh 'python3 task1/run.py'
+            }
           }
         }
       }
