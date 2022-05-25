@@ -7,13 +7,15 @@ pipeline {
         stage('Task 1') {
           steps {
             sh 'pwd'
+            echo 'TASK 1'
             sh 'python3 task1/run.py'
           }
         }
         stage('Task 2') {
           steps {
             sh 'ls'
-            sh 'python3 task2/run.py'
+            echo 'TASK 2'
+            sh 'python3 task1/run.py'
           }
         }
       }
