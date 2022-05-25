@@ -11,7 +11,7 @@ pipeline {
             dir('task1'){
               sh 'pwd'
               sh 'ls'
-              sh 'python3 task1/run.py'
+              sh 'python3 run.py'
             }
           }
         }
@@ -22,7 +22,7 @@ pipeline {
             dir('task1'){
               sh 'pwd'
               sh 'ls'
-              sh 'python3 task1/run.py'
+              sh 'python3 run.py'
             }
           }
         }
